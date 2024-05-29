@@ -5,7 +5,11 @@ import numpy as np
 import plotly.express as px
 
 #reading the data and correcting datatypes
-data = pd.read_csv('vehicles_us.csv')
+data = pd.read_csv('vehicles_us.csv') #allows Render to read the csv since it is in the same repository as app.py
+#the line below is my unique file path where vehicles_us.csv is stored. To use this file on your local machine, you must use the file path where you will save
+#vehicles.csv
+#data = pd.read_csv('C:/Users/tk_42/AppData/Local/Programs/Python/Python39/Scripts/SoftwareDevTools/vehicles_us.csv') 
+
 data['model_year'] = data['model_year'].astype(int, errors = 'ignore')
 data['cylinders'] = data['cylinders'].astype(int, errors = 'ignore')
 data['odometer'] = data['odometer'].astype(int, errors='ignore')
