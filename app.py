@@ -5,7 +5,7 @@ import numpy as np
 import plotly.express as px
 
 #reading the data and correcting datatypes
-data = pd.read_csv('C:/Users/tk_42/AppData/Local/Programs/Python/Python39/Scripts/SoftwareDevTools/vehicles_us.csv')
+data = pd.read_csv('SoftwareDevTools/vehicles_us.csv')
 data['model_year'] = data['model_year'].astype(int, errors = 'ignore')
 data['cylinders'] = data['cylinders'].astype(int, errors = 'ignore')
 data['odometer'] = data['odometer'].astype(int, errors='ignore')
