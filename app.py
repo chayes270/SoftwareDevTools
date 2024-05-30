@@ -59,6 +59,7 @@ data.dropna(subset=["model_year", 'odometer'], inplace=True)
 
 
 #First visual is a table of the dataframe
+st.title('SoftwareDevTools-Project_4')
 st.header('Data Viewer')
 st.dataframe(data)
 
